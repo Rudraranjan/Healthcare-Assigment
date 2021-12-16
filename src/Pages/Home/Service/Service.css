@@ -1,0 +1,12 @@
+.bg-color{
+    background: rgb(200, 239, 255);
+    background: linear-gradient(90deg, rgb(195, 233, 248) 0%, rgb(200, 238, 253) 100%);
+}
+.button-color{
+    background-color: cadetblue;
+    border: none;
+}
+.button-color:hover{
+    background-color: rgb(37, 100, 102);
+    border: none;
+}
