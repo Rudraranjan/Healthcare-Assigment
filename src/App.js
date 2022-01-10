@@ -8,6 +8,7 @@ import Notfound from './Pages/Notfound/Notfound';
 import AuthProvider from './Context/AuthProvider';
 
 import Headerone from './Pages/Share/Headerone/Headerone';
+import PrivateRoute from './Pages/Login/Pravateroute/PrivateRoute';
 
 
 
@@ -28,9 +29,9 @@ function App() {
           <Route path='/login'>
               <Login></Login>
           </Route>
-          <Route path='/servics/:doctorview'>
+          <PrivateRoute path='/servics/:doctorview'>
               <Viewdoctor></Viewdoctor>
-          </Route>
+          </PrivateRoute>
           <Route path='*'>
               <Notfound></Notfound>
           </Route>

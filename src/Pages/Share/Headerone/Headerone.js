@@ -2,6 +2,7 @@ import React from 'react';
 import { Button,Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../Hooks/useAuth';
+import { HashLink } from 'react-router-hash-link';
 
 const Headerone = () => {
     const {user, logOut} = useAuth();
@@ -13,9 +14,9 @@ const Headerone = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                    <Nav.Link as={Link} to="/home#home" className='fw-bold'>Home</Nav.Link>
-                    <Nav.Link as={Link} to="/home#services" className='fw-bold'>Services</Nav.Link>
-                    <Nav.Link as={Link} to="/home#aboutus" className='fw-bold'>About Us</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#home" className='fw-bold'>Home</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#services" className='fw-bold'>Services</Nav.Link>
+                    <Nav.Link as={HashLink} to="/home#aboutus" className='fw-bold'>About Us</Nav.Link>
                     
                     </Nav>
                     <Nav>

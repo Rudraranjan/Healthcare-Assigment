@@ -1,7 +1,7 @@
 import React from 'react';
 import Aboutus from '../Aboutus/Aboutus';
 import Homehead from '../Homohead/Homehead';
-import Reviews from '../Reviews/Reviews';
+
 import Services from '../Services/Services';
 
 

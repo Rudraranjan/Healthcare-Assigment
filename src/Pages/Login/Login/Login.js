@@ -11,7 +11,7 @@ const Login = () => {
     const [error, setError] = useState('');
     const [isLogin, setIsLogin] = useState(false);
 
-    const {signInUsingGoogle} = useAuth();
+    const {signInUsingGoogle, signInUsingFacebook} = useAuth();
     const auth = getAuth();
 
     const handelRegistration = e =>{
@@ -110,6 +110,9 @@ const Login = () => {
             <hr />
            <div className='mt-5'>
             <Button onClick={signInUsingGoogle} className='btn btn-warning fw-bold'>Sign In with Google</Button>
+           </div>
+           <div className='mt-5'>
+            <Button onClick={signInUsingFacebook} className='btn btn-info fw-bold'>Sign In with Facebook</Button>
            </div>
             </div>
         </div>
